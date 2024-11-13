@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra(animal.javaClass.simpleName, animal)
                 startActivity(intent)
             } else {
-                // Handle invalid input (e.g., show an error message)
+               
                 Toast.makeText(this, "Введите данные о породе и годе рождения", Toast.LENGTH_SHORT).show()
             }
 
