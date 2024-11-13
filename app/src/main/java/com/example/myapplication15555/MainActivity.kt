@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             val poroda = editText.text.toString()
             val godimecag = editText2.text.toString().toIntOrNull()
 
-            if (poroda.isNotEmpty() && godimecag != null) { // Check if both fields are filled
+            if (poroda.isNotEmpty() && godimecag != null) { 
                 val animal = Animal(poroda, godimecag)
                 val intent = Intent(this@MainActivity, MainActivity2::class.java)
                 intent.putExtra(animal.javaClass.simpleName, animal)
